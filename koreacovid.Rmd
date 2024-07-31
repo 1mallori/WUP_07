@@ -56,7 +56,9 @@ table2 <- xtabs(~result + sex, data=kRdata)
 rowPerc(table2)
 colPerc(table2)
 ```
+
 This numerical summery shows that more males died as apposed to women.  
+
 ## Inferential results 
 
 
