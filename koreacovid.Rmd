@@ -40,14 +40,17 @@ result is a categorical variable, sex is categorical
 result depends on sex , we use a helper file  
 cat~cat  
 # Results
-## Graphical results - use ggplot commands to do this  
+## Graphical results - use ggplot commands to do this
+
 ```{r}
 barchartGC(~result + Sex,data=kRdata)
 barchartGC(~result + Sex,data=kRdata, type="percent")
 ```
+
   This bar chart shows that more women lived than died. It also shows that more men died over women. 
   
 ## Numerical results
+
 ```{r}
 table2 <- xtabs(~result + sex, data=kRdata)
 rowPerc(table2)
